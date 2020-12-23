@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+*,
+*:before,
+*:after {
+    box-sizing: (border-box);
+}
+
+.blur {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+}
+
+.overlay {
+    background: url('https://cdn.shopify.com/s/files/1/2624/8830/t/36/assets/loader.gif?v=15552516830053958309') no-repeat center center;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+html,
+body {
+    background: #f1f1f1;
+    font-family: 'Hind Siliguri', sans-serif;
+    padding: 1em;
+}
+
+h1 {
+    text-align: center;
+    color: #a8a8a8;
+    text-shadow: (1px 1px 0 rgba(white, 1));
+}
+
+form {
+    border: 2px solid blue;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 5px;
+    text-align: center;
+}
+
+input,
+textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    border-radius: (8px);
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Hind Siliguri', sans-serif;
+    box-shadow: (0 1px 1px rgba(black, 0.1));
+    resize: none;
+}
+
+#input-submit {
+    color: white;
+    background: red;
+    cursor: pointer;
+}
+
+textarea {
+    height: 126px;
+}
+
+.half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+
+.right {
+    width: 50%;
+}
+
+.left {
+    margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+    .half {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+}
+
+
+/* Clearfix */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.half.left.cf>input {
+    margin: 5px;
+}
